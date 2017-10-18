@@ -1,5 +1,5 @@
 //Get needed contracts
-var Owned = artifacts.require('./Owned.sol');
+var Owned = artifacts.require('./ownedContract.sol');
 
 //Ownable Test
 describe('2. Owned Test:: ', function(u){

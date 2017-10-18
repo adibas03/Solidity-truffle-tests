@@ -1,5 +1,5 @@
 //Get needed contracts
-var safeMath = artifacts.require("./safeMath.sol");
+var safeMath = artifacts.require("./safeMathContract.sol");
 
 //SafeMAth Test
     describe('1. SafeMath Test:: ', function(){
