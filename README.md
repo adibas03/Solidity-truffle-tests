@@ -4,7 +4,7 @@
 This repo provides truffle based tests which carry out different attacks on the commonly used contracts and libraries in the Space
 
 ## Dependencies
-[Testrpc](https://github.com/ethereumjs/testrpc)
+[Testrpc](https://github.com/ethereumjs/testrpc)  
 [Truffle](https://github.com/trufflesuite/truffle)
 
 ## Run tests
@@ -13,8 +13,8 @@ This repo provides truffle based tests which carry out different attacks on the 
 * Run `truffle test` from the repo directory
 
 ## Discoveries
-###### Open Zeppelin Safe Math
--  Addition:: -1 Added to 0 (overflow) : Should fail Addition - Minus:  
+* ###### Open Zeppelin Safe Math
+  + Addition:: -1 Added to 0 (overflow) : Should fail Addition - Minus:  
 
 ## Contributors
 [Github contributors](https://github.com/adibas03/Solidity-truffle-tests/graphs/contributors)
