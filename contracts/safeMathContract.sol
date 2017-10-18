@@ -4,10 +4,9 @@ pragma solidity ^0.4.11;
  * @title SafeMath Test contract
  * @dev Contract to test functionality of safeMath library
  */
-import "./SafeMath.sol";//Import safeMAth library or contract containing safemath library
+import "../libraries/SafeMath.sol";//Import safeMAth library or contract containing safemath library
 
-contract safeMath {
-  //SafeMath SafeMathLib = SafeMath;
+contract safeMathContract {
 
   function mul(uint256 a, uint256 b) constant returns (uint256) {
     return SafeMath.mul(a,b);
