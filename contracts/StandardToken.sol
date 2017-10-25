@@ -1,3 +1,4 @@
+//https://github.com/OpenZeppelin/zeppelin-solidity/blob/master/contracts/token/StandardToken.sol
 pragma solidity ^0.4.11;
 
 import '../libraries/SafeMath.sol';
