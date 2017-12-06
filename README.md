@@ -26,6 +26,10 @@ This repo provides truffle based tests which carry out different attacks on the 
 
 To contribute, kindly create an issue to indicate what you would be working on, then create a PR once code is ready.
 
+## Contribute
+Buy me a Coffe or a Beer  
+Ethereum: **0x965D1C9987BD2c34e151E63d60AFf8E9dB6b1561**
+
 
 ## Links/ Sources
 
