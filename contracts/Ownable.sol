@@ -1,7 +1,7 @@
 //https://github.com/OpenZeppelin/zeppelin-solidity/blob/master/contracts/ownership/Ownable.sol
-//Last Update: 2017-10-18 18:24pm WAT
+//Last Update: 2018-05-06 11:44 AM WAT
 
-pragma solidity ^0.4.11;
+pragma solidity ^0.4.21;
 
 
 /**
@@ -13,6 +13,7 @@ contract Ownable {
   address public owner;
 
 
+  event OwnershipRenounced(address indexed previousOwner);
   event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
 
 
@@ -20,10 +21,9 @@ contract Ownable {
    * @dev The Ownable constructor sets the original `owner` of the contract to the sender
    * account.
    */
-  function Ownable() {
+  function Ownable() public {
     owner = msg.sender;
   }
-
 
   /**
    * @dev Throws if called by any account other than the owner.
@@ -33,15 +33,21 @@ contract Ownable {
     _;
   }
 
-
   /**
    * @dev Allows the current owner to transfer control of the contract to a newOwner.
    * @param newOwner The address to transfer ownership to.
    */
-  function transferOwnership(address newOwner) onlyOwner public {
+  function transferOwnership(address newOwner) public onlyOwner {
     require(newOwner != address(0));
-    OwnershipTransferred(owner, newOwner);
+    emit OwnershipTransferred(owner, newOwner);
     owner = newOwner;
   }
 
+  /**
+   * @dev Allows the current owner to relinquish control of the contract.
+   */
+  function renounceOwnership() public onlyOwner {
+    emit OwnershipRenounced(owner);
+    owner = address(0);
+  }
 }
