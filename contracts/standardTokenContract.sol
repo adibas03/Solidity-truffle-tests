@@ -7,8 +7,8 @@ contract standardTokenContract is StandardToken{
 
   //Required to Instantiate nummber of tokens and give creator all the tokens
   function standardTokenContract(){
-    totalSupply = 100000000;
-    balances[msg.sender] = totalSupply;
+    totalSupply_ = 100000000;
+    balances[msg.sender] = totalSupply();
   }
 
 
