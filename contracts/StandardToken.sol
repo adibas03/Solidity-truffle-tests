@@ -1,4 +1,6 @@
 //https://github.com/OpenZeppelin/zeppelin-solidity/blob/master/contracts/token/StandardToken.sol
+//Last Update: 2018-05-06 12:45 PM WAT
+
 pragma solidity ^0.4.21;
 
 import '../libraries/SafeMath.sol';
